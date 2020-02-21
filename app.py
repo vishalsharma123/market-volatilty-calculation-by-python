@@ -41,8 +41,13 @@ d.to_csv("greater3.csv")
 
 
 
+#for geeting data from source site
 
-
+import requests
+import datetime
+url = "url"
+r = requests.get(url, allow_redirects=True)
+open('volatilty.csv', 'wb').write(r.content)
 
 
 
